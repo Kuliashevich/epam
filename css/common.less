@@ -1,0 +1,351 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@button-color:#00a1e4;
+@button-color-active:lighten(@button-color,15%);
+
+
+@font-face {
+  font-family: 'bentonsans-light';
+  src: url('fonts/bentonsans-light.eot'); 
+  src: local('light'),
+       url('fonts/bentonsans-light.otf') format('opentype'),
+       url('fonts/bentonsans-light.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/bentonsans-light.woff') format('woff'), 
+       url('fonts/bentonsans-light.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'bentonsans-bold';
+  src: url('fonts/bentonsans-bold.eot'); 
+  src: local('bold'),
+       url('fonts/bentonsans-bold.otf') format('opentype'),
+       url('fonts/bentonsans-bold.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/bentonsans-bold.woff') format('woff'), 
+       url('fonts/bentonsans-bold.ttf')  format('truetype');
+}     
+
+@font-face {
+  font-family: 'bentonsans-book';
+  src: url('fonts/bentonsans-book.eot'); 
+  src: local('book'),
+       url('fonts/bentonsans-book.otf') format('opentype'),
+       url('fonts/bentonsans-book.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/bentonsans-book.woff') format('woff'), 
+       url('fonts/bentonsans-book.ttf')  format('truetype');
+       
+}
+
+@font-face {
+  font-family: 'bentonsans-medium';
+  src: url('fonts/bentonsans-medium.eot'); 
+  src: local('medium'),
+       url('fonts/bentonsans-medium.otf') format('opentype'),
+       url('fonts/bentonsans-medium.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/bentonsans-medium.woff') format('woff'), 
+       url('fonts/bentonsans-medium.ttf')  format('truetype');
+      
+}
+@font-face {
+  font-family: 'bentonsans-regular';
+  ssrc: url('fonts/bentonsans-regular.eot'); 
+  src: local('regular'),
+       url('fonts/bentonsans-regular.otf') format('opentype'),
+       url('fonts/bentonsans-regular.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/bentonsans-regular.woff') format('woff'), 
+       url('fonts/bentonsans-regular.ttf')  format('truetype');
+      
+}
+
+// .font-custom(@size: 12px,) {
+// 	font-family: 'regular';
+// font-size:@size
+// }
+
+
+
+
+body{
+	font-size: 100%;
+	font-family: "bentonsans-regular", sans-serif; 
+	//.font-custom(15px)
+}
+
+li{
+	list-style: none;
+}
+
+.logo{
+	width: 77px;
+	height: 40px;
+	margin-left:30px;
+	margin-bottom:10px;
+	float: left;
+	text-indent: -90000px;
+	background: url("../images/logo.png") no-repeat 0 0;
+	}
+
+
+
+.partners-info{
+			display:block;
+			max-width: 560px;
+			overflow:hidden;			
+			
+				h1{		
+					display:inline-block;	
+					font-size: 1.1em;
+					margin-bottom: 20px;		
+					width:100%;	
+					font-family: "bentonsans-medium", serif; 	
+				}
+				
+				h2{
+					display:inline-block;
+					background:black;
+					font-size: 1.6em;
+					color:white;
+					margin:0 115px 5px 0;	
+					padding:15px 28px 15px 15px;
+					font-family: "bentonsans-book", serif;
+																	
+				}
+				
+				.partners-description{
+					background:rgba(255,255,255,0.85);
+					margin-bottom:135px;
+					margin-top: 9px;
+					margin-right: 30px;
+					max-height: 175px;
+					overflow: hidden;
+
+
+						p{	
+							font-size: 1.1em;
+							padding: 2px 35px 35px 25px;
+							overflow: hidden;
+							font-family: "bentonsans-regular", serif;
+
+
+						}
+						&:before{
+							background: url("../images/layout/corner.png") no-repeat 0 0;
+							content:'';
+							width:25px;
+							height:25px;
+							display:block;
+						}	
+										
+				}	
+						
+		}	
+
+
+ 	.button{
+  background: @button-color;
+  text-align:center;
+  overflow:hidden;
+  width:100%;
+
+  a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+    padding:15px 0 35px 10px;
+    width:100%;
+
+    &:after{
+      content:'';
+      display:inline-block;
+      background:url("../images/layout/blank-icon.png") no-repeat 0 0;
+      width:39px;
+      height:39px;
+      position:relative;
+      bottom:-10px;
+      left:10px;
+      margin-right:30px;
+    }
+  }
+  &:active{
+    background: @button-color-active;
+  }
+}
+
+.about-company{
+	background:white;
+	
+		.company-info{
+			padding:50px 50px 80px 30px;
+			
+				h1{
+					font-size:18px;
+					font-weight: bold;	
+					margin-bottom:12px;
+					font-family: "bentonsans-medium", serif; 
+			      }
+				p{	
+					font-size:1.1em;
+					font-family: "bentonsans-regular", serif; 
+			      }
+				 				  
+		}
+		.comments{
+            padding:0 20px;
+            background-color:#f4f4f4; 
+            font-style: italic;
+            padding:40px 90px 30px 100px;
+            position: relative;
+            font-family: "bentonsans-regular", serif; 
+            color: #6e6e6e;
+            
+            .commentator-name{
+                font-style: normal;
+                font-size: 1em;
+                padding-top: 12px;
+                font-family: "bentonsans-regular", serif; 
+                color: #6e6e6e;
+            }
+            
+            &:before{
+                position: absolute;
+                width: 45px;
+                height: 30px;
+                content:'';
+                left: 30px;
+                top: -1px;;
+                background: url(../images/layout/quote-before.png) no-repeat 0px 0px;
+                z-index: 5;
+            }
+            &:after{
+                position: absolute;
+                width: 45px;
+                height: 30px;
+                content:'';
+                right: 12px;
+				bottom: -12px;
+                background: url(../images/layout/quote-after.png) no-repeat 0px 0px;
+                z-index: 5;
+            }
+        }
+	
+}
+
+.feedback{
+
+	 		.expert-info{
+		      display:none;
+		      width:0%;
+		    }
+			.main{
+		      border-top: 1px solid #ebebeb;
+		    }
+		    overflow:hidden;
+			a{
+				text-decoration:none;
+				color:black;
+				
+			}
+
+		   
+		    li{
+				border-right:1px solid #ebebeb;
+				overflow:hidden;
+				h1{
+					display:inline-block;
+					font-size:20px;
+				}
+				p{
+					display:none;
+				}
+
+		      @media (max-width:  558px){
+		        width:100%;
+			  }
+		      display:inline-block;
+		      width:49.4%;
+		      padding:0 0 25px 0;
+		      text-align: center;
+
+		    }
+		    .tel-info{
+				h1{
+					&:before{
+						content:'';
+						display:inline-block;
+						width:55px;
+						height:54px;
+						background:url("../images/layout/phone.png") no-repeat 0 0;
+						position: relative;
+						top: 20px;
+						left:-20px;
+					}
+				}
+				@media (max-width:  558px){
+					border-bottom:1px solid #ebebeb;
+				}
+		    }
+		    .email-info{
+				border-right:none;
+				.email-h-for-desktop{
+					display:none;
+				}
+				h1{
+					&:before{
+						content:'';
+						display:inline-block;
+						width:69px;
+						height:54px;
+						background:url("../images/layout/email.png") no-repeat 0 0;
+						position:relative;
+						top:24px;
+						left:-20px;
+					}
+				}
+
+			  }
+}
+.footer{
+	background:black;
+	border-bottom:3px solid white;
+	padding:25px 30px 30px;
+	
+		.homepage{
+			display:inline-block;
+			color:#00a1e4;
+			margin-bottom:17px;
+			width:100%;
+			font-size: 1.3em;
+		}
+		.footer-nav{
+			display:inline-block;
+
+
+			li{
+				float:left;
+				
+					&:after{
+						margin: 0 10px;
+						content:'';
+						border-right:1px solid white;
+						
+					}				
+				
+					&:last-child:after{
+						border:none;
+					}
+				
+					a{
+						color:white;
+						text-decoration:none;
+						font-size: 1.3em;
+					}
+										
+				}	
+					
+		}	
+		
+}
